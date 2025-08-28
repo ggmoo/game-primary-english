@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Primary English — Aprende inglés jugando</title>
+  <style>
+    :root{
+      --bg:#0b1220; 
+      --card:#121a2b; 
+      --muted:#8ea0b8; 
+      --accent:#4f7cff; 
+      --accent-2:#00d2a8; 
+      --text:#eef3fb;
+    }
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--accent)}
+    .wrap{max-width:1080px;margin:auto;padding:24px}
+    .hero{display:grid;gap:16px;text-align:center;padding:40px 16px}
+    .hero h1{font-size: clamp(28px, 4vw, 44px);margin:0}
+    .hero p{margin:0 auto;max-width:72ch;color:var(--muted)}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:16px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:14px;text-decoration:none;font-weight:700;border:1px solid transparent;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#0b1220}
+    .btn.ghost{background:transparent;border-color:#2a3858;color:var(--text)}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid #1b2742;border-radius:16px;padding:20px}
+    .card h3{margin-top:0}
+    .muted{color:var(--muted)}
+    .section{padding:32px 0}
+    .section h2{margin:0 0 8px;font-size: clamp(22px, 3vw, 32px)}
+    .list{margin:0;padding-left:18px}
+    .gallery{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+    .shot{aspect-ratio:16/9;background:#0f1729;border:1px dashed #2a3858;border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    details{background:var(--card);border:1px solid #1b2742;border-radius:12px;padding:14px}
+    details+details{margin-top:10px}
+    footer{padding:40px 0;color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Bienvenido a Game Primary English</h1>
+      <p>¡Aprender inglés nunca había sido tan divertido! 🎮✨ Game Primary English es un juego educativo para que niños de primaria practiquen vocabulario, números, colores, formas y frases básicas en inglés mientras se divierten.</p>
+      <div class="cta-row">
+        <a href="#" class="btn">🎮 JUGAR AHORA EN WEB</a>
+        <a href="#" class="btn">📱 DESCARGAR PARA ANDROID</a>
+        <a href="#modos" class="btn ghost">📚 VER LECCIONES</a>
+        <a href="#padres" class="btn ghost">👨‍👩‍👧‍👦 PARA PADRES</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🎮 Sobre el Juego (About the Game)</h2>
+      <p><strong>¿Qué es Game Primary English?</strong><br>
+      Es una aplicación educativa interactiva que combina juegos, colores llamativos, música divertida y actividades diseñadas especialmente para estudiantes de primaria.</p>
+      <ul>
+        <li>Juegos con números, colores, animales, objetos y más</li>
+        <li>Actividades de escucha y repetición para mejorar la pronunciación</li>
+        <li>Retos de memoria y velocidad para hacer el aprendizaje emocionante</li>
+        <li>Interfaz sencilla e intuitiva para niños</li>
+        <li>Progreso guardado para seguimiento de padres y maestros</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>🧩 Modos de Juego (Game Modes)</h2>
+      <ol id="modos">
+        <li>📚 <strong>Lecciones Interactivas:</strong> Aprende paso a paso con 30 lecciones organizadas desde números básicos hasta centenas.</li>
+        <li>🎯 <strong>Niveles de Práctica:</strong> 30 niveles progresivos con diferentes rangos de dificultad.</li>
+        <li>🔊 <strong>Práctica de Pronunciación:</strong> Escucha y repite números en inglés con retroalimentación inmediata.</li>
+        <li>🎲 <strong>Modo Aleatorio:</strong> Retos sorpresa con preguntas variadas.</li>
+        <li>🏆 <strong>Sistema de Rachas:</strong> Mantén tus rachas y desbloquea logros.</li>
+      </ol>
+    </section>
+
+    <section class="section" id="padres">
+      <h2>👩‍🏫 Para Padres y Profesores</h2>
+      <h3>Para padres</h3>
+      <ul>
+        <li>Ayuda a practicar inglés sin forzar</li>
+        <li>Seguimiento del progreso y logros</li>
+        <li>Actividades educativas sin pantallas excesivas</li>
+      </ul>
+      <h3>Para profesores</h3>
+      <ul>
+        <li>Recurso adicional para reforzar clases</li>
+        <li>Contenido alineado con el currículo de primaria</li>
+        <li>Herramienta para práctica individual o grupal</li>
+      </ul>
+      <p>También fomenta:</p>
+      <ul>
+        <li>🧠 La concentración</li>
+        <li>📚 El aprendizaje autónomo</li>
+        <li>🎯 La motivación constante</li>
+        <li>🤝 La confianza en el idioma inglés</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>📱💻 Plataformas Disponibles</h2>
+      <h3>🌐 Versión Web (PC)</h3>
+      <p>Juega directamente en tu navegador sin descargas. Compatible con Chrome, Firefox y Safari.</p>
+      <h3>📱 Versión Móvil (Android)</h3>
+      <p>Disponible para tablets y smartphones, funciona sin internet y está optimizada para pantallas táctiles.</p>
+    </section>
+
+    <section class="section">
+      <h2>📸 Galería (Screenshots)</h2>
+      <div class="gallery">
+        <div class="shot">Pantalla principal</div>
+        <div class="shot">Lecciones</div>
+        <div class="shot">Juego</div>
+        <div class="shot">Progreso</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>❓ Preguntas Frecuentes (FAQ)</h2>
+      <details><summary>¿Es gratis el juego?</summary><p>Sí, totalmente gratuito, sin compras dentro de la app.</p></details>
+      <details><summary>¿Qué edades pueden jugar?</summary><p>Está diseñado para niños de 6 a 12 años.</p></details>
+      <details><summary>¿Necesito internet?</summary><p>Web sí, Android no.</p></details>
+      <details><summary>¿Guarda el progreso?</summary><p>Sí, en ambas versiones.</p></details>
+    </section>
+
+    <footer>
+      <p>📧 Email: tu-email@ejemplo.com | 🌐 Web: tu-sitio-web.com | 📱 Redes sociales</p>
+    </footer>
+  </div>
+</body>
+</html>
